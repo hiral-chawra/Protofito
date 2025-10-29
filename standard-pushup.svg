@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ground shadow -->
+  <ellipse cx="150" cy="180" rx="120" ry="10" fill="#e0e0e0" />
+  
+  <!-- Stick figure - Push-up position -->
+  <!-- Head -->
+  <circle cx="70" cy="120" r="15" fill="none" stroke="#333" stroke-width="2" />
+  
+  <!-- Body -->
+  <line x1="70" y1="135" x2="200" y2="135" stroke="#333" stroke-width="3" />
+  
+  <!-- Arms -->
+  <line x1="90" y1="135" x2="90" y2="170" stroke="#333" stroke-width="3" />
+  <line x1="180" y1="135" x2="180" y2="170" stroke="#333" stroke-width="3" />
+  
+  <!-- Legs -->
+  <line x1="200" y1="135" x2="240" y2="170" stroke="#333" stroke-width="3" />
+  <line x1="240" y1="170" x2="250" y2="170" stroke="#333" stroke-width="3" />
+  
+  <!-- Hands -->
+  <circle cx="90" cy="170" r="5" fill="#333" />
+  <circle cx="180" cy="170" r="5" fill="#333" />
+  
+  <!-- Feet -->
+  <circle cx="250" cy="170" r="5" fill="#333" />
+</svg>

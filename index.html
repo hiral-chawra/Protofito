@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Exercise Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Exercise Detection</h1>
+        
+        <!-- Camera and Detection Area -->
+        <div class="camera-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="detection-canvas"></canvas>
+            
+            <!-- Angle Label -->
+            <div class="angle-label">Angle: <span id="angle-value">0°</span></div>
+            
+            <!-- Feedback Text -->
+            <div class="feedback-text" id="posture-feedback">Ready to start</div>
+            
+            <!-- Camera Controls -->
+            <div class="camera-controls">
+                <button id="start-btn" class="btn">Start</button>
+                <button id="stop-btn" class="btn" disabled>Stop</button>
+            </div>
+        </div>
+        
+        <!-- Exercise Info Panel -->
+        <div class="info-panel">
+            <div class="exercise-header">
+                <h2 id="exercise-title">Push Up</h2>
+                <span class="difficulty-tag" id="difficulty">Medium</span>
+            </div>
+            
+            <div class="exercise-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Reps:</span>
+                    <span class="stat-value" id="reps-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Duration:</span>
+                    <span class="stat-value" id="duration-timer">00:00</span>
+                </div>
+            </div>
+            
+            <!-- Exercise Details Section -->
+            <div class="exercise-details">
+                <h3>Exercise Details</h3>
+                <div class="details-content">
+                    <div class="details-image">
+                        <img id="exercise-image" src="https://via.placeholder.com/150" alt="Exercise demonstration">
+                    </div>
+                    <div class="details-text">
+                        <p id="exercise-description">Push-ups are a compound exercise that works multiple muscle groups including the chest, shoulders, triceps, and core. Proper form is essential to prevent injury and maximize effectiveness.</p>
+                        <div class="details-tips">
+                            <h4>Form Tips:</h4>
+                            <ul id="form-tips-list">
+                                <li>Keep your body in a straight line from head to heels</li>
+                                <li>Position hands slightly wider than shoulder-width</li>
+                                <li>Lower until chest nearly touches the floor</li>
+                                <li>Keep elbows at a 45-degree angle to your body</li>
+                            </ul>
+                        </div>
+                        <div class="details-variations">
+                            <h4>Variations:</h4>
+                            <select id="exercise-variations">
+                                <option value="standard">Standard Push-Up</option>
+                                <option value="wide">Wide Push-Up</option>
+                                <option value="diamond">Diamond Push-Up</option>
+                                <option value="incline">Incline Push-Up</option>
+                                <option value="decline">Decline Push-Up</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="body-focus">
+                <h3>Body Focus</h3>
+                <div class="focus-item">
+                    <span class="focus-label">Arms:</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="arms-progress" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <span class="focus-label">Chest:</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="chest-progress" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="focus-item">
+                    <span class="focus-label">Core:</span>
+                    <div class="progress-bar">
+                        <div class="progress" id="core-progress" style="width: 45%;">45%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
